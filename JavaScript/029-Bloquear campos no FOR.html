@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+        
+        <style>
+            html{
+                background-color: rgba(186, 186, 186, 0.38); /*ctrl + e*/
+            }
+            #mainDiv{
+                background-color: #ffffff;
+                width: 100%;
+            }
+            #divCampos{
+                width: 95%;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        
+    <form id="myForm">
+        <fieldset>
+            <legend>Formulário</legend>
+            
+            <div id="mainDiv">
+                <div id="divCampos">
+                    <p><label>Nome:</label>
+                        <input type="text" name="txNome"></p>
+                    <p><label>Telefone:</label>
+                        <input type="tel" name="telTelefone"></p>
+                    <p><label>Opções:</label>
+                        <select>
+                            <option value="">--- Selecionar ---</option>
+                            <option value="01">Carro</option>
+                            <option value="02">Moto</option>
+                        </select>
+                    </p>
+                    <p><input type="checkbox"><label>Avançado</label></p>
+                    <p><input type="checkbox"><label>Normal</label></p>
+                    <p><input type="radio" name="radioBox" id=rad1 value="1">Radio 1</p>
+                    <p><input type="radio" name="radioBox" id=rad2 value="2">Radio 2</p>
+                    <p><input type="radio" name="radioBox" id=rad3 value="3">Radio 3</p>
+                    <p><input type="image" src="pesquisa.webp" 
+                              onclick="alert('oi')" style="width: 25px">Pesquisar</p>
+                    <p><img id="imgPesquisa" src="pesquisa.webp" 
+                            onclick="doAlert(this, 'teste')" style="width: 25px">Pesquisar Function</p>
+                </div>      
+            </div>
+        </fieldset>
+        
+        <button type="submit">Button Submit</button>
+        <input type="button" value="Block byTagName" id="btnBlock" onclick="Bloquear(document, this)">
+        <input type="button" value="Block form.elements" id="btnBlock" onclick="Bloquear02(myForm, this)">
+        
+        <script>
+            function Bloquear(doc, botao){
+                botao.disabled = true;                
+                var tagBlock = ['img', 'input', 'select', 'button'];
+                
+                for (i = 0; i < tagBlock.length; i++){
+                    var selecTag = tagBlock[i];
+                    var qtdTags = doc.getElementsByTagName(selecTag).length;
+                    
+                    for (ind = 0; ind < qtdTags; ind++){
+                        var elem = doc.getElementsByTagName(selecTag)[ind];
+                        if (elem.disabled == true){
+                            elem.disabled = false; //O chrome desabilita mas deixa o onclick funcionando
+                        } else {
+                            elem.disabled = true;
+                        }
+                    }
+                }
+                botao.disabled = false;
+            }
+            
+            function Bloquear02(form, botao){
+                botao.disabled = true;
+                //Outro método
+                for (i=0; i < form.length; i++){
+                    var selecTag = form.elements[i];
+                    if (selecTag.disabled == true){
+                        selecTag.disabled = false;
+                    } else {
+                        selecTag.disabled = true;    
+                    }
+                }
+                botao.disabled = false;
+            }
+            
+            function doAlert(obj, msg){
+                if (obj.disabled == true){
+                    return false;
+                } else {
+                    alert(msg);
+                }
+            }
+            
+        </script>
+        
+    </form>
+        
+    </body>
+    
+</html>

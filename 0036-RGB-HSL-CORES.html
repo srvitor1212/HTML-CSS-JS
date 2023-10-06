@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <style>
+            
+            .grupo-cores{
+                padding: 15px;
+                counter-reset: contador;
+                background: url(imagens/original.png);
+            }
+            
+            .grupo-cores div{
+                width: 90%;
+                padding: 15px;
+                border: 10px solid rgba(0,0,0,.5);
+                
+                counter-increment: contador;
+            }
+            
+            .grupo-cores div:before{
+                content: "[" counter(contador) "]";
+            }
+            
+            .grupo-cores div:nth-child(2){
+                background-color: red;
+                background-clip: content-box; /*define aonde o background vai pintar*/
+            }
+            
+            .grupo-cores div:nth-child(3){
+                /*RGBA = Red Green Blue Transparencia*/
+                background-color: rgba(50%, 50%, 0%, .5);
+                background-clip: content-box;
+            }
+            
+            .grupo-cores div:nth-child(4){
+                /* Tom, Saturação, luminosidade*/
+                background-color: hsl(120deg, 100%, 20%);
+                background-clip: content-box;
+            }
+            
+            .grupo-cores div:nth-child(5){
+                /* Tom, Saturação, luminosidade, transparencia*/
+                background-color: hsl(120deg, 100%, 20%, .5);
+                background-clip: content-box;
+            }
+            
+            .grupo-cores div:nth-child(6){
+                background-image: 
+                    linear-gradient( 68deg, blue, transparent),
+                    linear-gradient( to top , yellow, transparent);
+                
+                background-clip: content-box;
+            }
+            
+            .grupo-cores div:nth-child(7){
+                background-image: 
+                    radial-gradient(red, blue);
+                background-clip: content-box;
+            }
+                        
+            .grupo-cores div:nth-child(8){
+                background-image: 
+                    radial-gradient(circle, red, blue);
+                background-clip: content-box;
+            }
+                        
+            .grupo-cores div:nth-child(9){
+                background-image: 
+                    radial-gradient(red, green, blue, orange, yellow, red);
+                background-clip: content-box;
+            }
+                                    
+            .grupo-cores div:nth-child(10){
+                background-image: 
+                    radial-gradient(red 50%, green, rgba(50, 10, 200, .5), orange, yellow, red);
+                background-clip: content-box;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <h1>Cores</h1>
+        
+        <div class="grupo-cores">
+            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>
+
+        </div>
+        
+    </body>
+</html>

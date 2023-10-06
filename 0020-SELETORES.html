@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <style>
+            
+            /*Descendente*/
+            article:nth-child(1) a{ 
+                /*Selecionar o primeiro filho se ele for um article*/
+                color: red;
+            }
+            article:nth-child(3) > p{ 
+                /* Seleciona os "p" que são filhos diretor do article 3*/
+                color: red;
+            }
+            
+            article:nth-child(5) h3 + p{ 
+                /* Seleciona somente o "p" que vem logo após o h3*/
+                color: red;
+            }            
+            
+            article:nth-child(7) h3 ~ p{ 
+                /* Seleciona todos "p" que vem logo após o h3*/
+                color: gray;
+            }
+            
+            article:not(.destaque){
+                /*Todos articles que não tem a classe destaque*/
+                color: orange;
+            }
+            .destaque{
+                background: yellow;
+            }
+            
+            a[href="#"]{
+                /*todos a que tem href="#"*/
+                opacity: .2;
+            }
+            
+            a[href^="http"]{
+                /*começa com http*/
+                color: red;
+            }
+            
+            a[title]{
+                /* todos a que tem title*/
+                color: green;
+            }
+            
+            a[href$=".pdf"]{
+                /*termina com .pdf*/
+                text-decoration: none;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <article> <!-- 1 filho-->
+            <h3>Título</h3>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+        </article>
+        
+        <hr> <!-- 2 filho-->
+        
+        <article> <!-- 3 filho-->
+            <h3>Título 02</h3>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+        </article>
+        
+        <hr> <!-- 4 filho-->
+        
+        <article> <!-- 5 filho-->
+            <h3>Título 03</h3>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+        </article>   
+        
+        <hr> <!-- 6 filho-->
+        
+        <article class="destaque"> <!-- 7 filho-->
+            <p>Antes do H3 não recebe a formatação</p>
+            <h3>Título 03</h3>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+            <p>Parágrafo <a href="#">Link qualquer <b>Negrito</b> </a> </p>
+        </article>  
+        
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="0019-TRANSITION.html" title="veja exercicio anterior">link interno</a></li>
+            <li><a href="http://google.com.br/qq.pdf" target="_blank">arquivo</a></li>
+            <li><a href="http://google.com.br" target="_blank">link externo</a></li>
+        </ul>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    </body>
+</html>

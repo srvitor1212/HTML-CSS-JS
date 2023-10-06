@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+    </head>
+    
+    <body>
+    <h1>Exemplo de form</h1>
+    <form action="#" method="get" class="formLogin">            
+    <fieldset>
+
+<!-- input HTML5
+email
+tel
+url
+search
+number
+range
+date
+time
+color
+-->
+        <legend>Dados pessoais</legend>
+        <label>Email</label>
+        <input type="email" placeholder="nome@email.com" required>
+        <br>
+
+        <label>Número de filhos</label>
+        <input type="number" min="0" max="100">
+        <br>
+
+        <label>Nascimento</label>
+        <input type="date" min="2020-01-01" max="2022-12-31">
+        <br>
+
+        <p>Sexo:</p>            
+        <label>Masculino<input type="radio" name="sexo" value="M" checked></label>
+        <label>Feminino<input type="radio" name="sexo" value="F"></label>            
+        <br>
+
+        <label>Estado</label>
+        <select name="estado">
+            <option value="00">-- Selecione --</option>
+            <option value="sp">SP</option>
+            <option value="sc">SC</option>
+            <option value="ce">CE</option>
+            <option value="mg">MG</option>
+            <option value="rj">RJ</option>
+        </select>
+
+        <fieldset>                
+            <legend>Áreas de interesse</legend>
+            <label><input type="checkbox" name="html" value="html">HTML</label>
+            <label><input type="checkbox" name="html" value="html">CSS</label>
+            <label><input type="checkbox" name="html" value="html">JavaScript</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="30" rows="5" style="resize: none"></textarea> <!-- Permite escrever um grande texto-->
+
+            <textarea name="msg" cols="30" rows="5" style="resize: none" readonly>Termos e para serem aceitos, blá blá blá ... readonly</textarea>
+            <label><input type="checkbox">Li e aceito</label>
+            
+            <input name="range" type="range" min="0" max="10" step="2">
+            <input type="time">
+            <input type="color">            
+        </fieldset>
+        <br>
+        
+        <label>Seleciona vários</label>
+        <select multiple size="4">
+            <option value="00">-- Selecione --</option>
+            <option value="01">Opção 1</option>
+            <option value="02">Opção 2</option>
+            <option value="03">Opção 3</option>
+            <option value="04">Opção 4</option>
+            <option value="05">Opção 5</option>
+        </select>
+        <br>
+
+        <br>
+        <input type="submit" value="SUBMIT">
+        <input type="button" value="BUTTON">
+        <input type="reset" value="RESET">
+
+    </fieldset>            
+    </form>
+
+    </body>
+</html>

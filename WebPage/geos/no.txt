@@ -1,0 +1,19 @@
+CDD Fortaleza 
+CDD Joao Pessoa(Paraiba) 
+CDD Itapipoca 
+CDD Imperatriz 
+CDL Balsas 
+CDD Belem 
+CDD Natal 
+CDD Sul Maranhao (Dutra) 
+CDL Castelao-Ceara 
+CDS Redencao 
+CDD Campina Grande 
+CDS Santarem 
+CDD Aracati 
+CDS Itaituba 
+CDS Parintins 
+CDD Equatorial(Sao Luis) 
+CDD Maraba 
+CDD Aquiraz 
+CDD Teresinha 

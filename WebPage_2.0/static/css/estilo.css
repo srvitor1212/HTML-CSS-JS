@@ -1,0 +1,76 @@
+
+
+html {
+    font-family: sans-serif;
+}
+/*====================================================================================
+    Header
+=====================================================================================*/
+header {
+    background-color: #FFC629;
+    text-align: center;
+    padding: 20px;
+}
+#ambevtech{
+    width: 300px;
+}
+
+
+/*====================================================================================
+    Navbar
+=====================================================================================*/
+nav {
+    overflow: hidden;
+    background-color: #2d2a26;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #EAEAEA;
+    color: black;
+}
+
+
+/*====================================================================================
+    Main content
+=====================================================================================*/
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsividade */
+.column {
+    float: left;
+    width: 25%; /* Dividir de acordo com a qtd de colunas */
+}
+@media screen and (max-width: 1000px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#noscript{
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*====================================================================================
+    Footer
+=====================================================================================*/
+footer {
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 10px;
+}

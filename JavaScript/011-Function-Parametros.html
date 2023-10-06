@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Function com parâmetros</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+
+    </head>
+    
+    <body>
+        
+        <h1>Function com parâmetros</h1>
+        
+        <label>Altura: <input type="text" name="txtAltura"></label>
+        <label>Largura: <input type="text" name="txtLargura"></label>
+        <hr>
+        
+        <h3>Resultado</h3>
+        <div class="resultado"></div>
+        
+        <hr>
+        
+        <input type="button" value="Calcular" onclick="CalcArea()">
+        
+        <script>
+            
+            function CalcArea(){
+                var a = parseInt(document.all.txtAltura.value);
+                var l = parseInt(document.all.txtLargura.value);
+                var res = Calcula(a, l);
+                var divResult = document.querySelector(".resultado");
+                
+                if(isNaN(a) == true || isNaN(l) == true){
+                    alert("Informe somente números");
+                    throw new Error ("Os valores inseridos não são numéricos"); /*Colo erro no F12 e sai da function*/
+                   } else {
+                       divResult.innerHTML = res;
+                   }
+                
+                alert("Executou até o final");
+            }
+            
+            function Calcula(a, l){
+                return a * l;
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>

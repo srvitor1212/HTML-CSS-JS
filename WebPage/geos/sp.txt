@@ -1,0 +1,18 @@
+CDD Mooca 
+CDD Norte SP 
+CDD Embu(SUL SP) 
+CDD Sao Jose dos Campos
+CDD Taubate 
+CDD Praia Grande 
+CDD Oeste 
+CDD Paulinia(Campinas) 
+CDD Diadema 
+CDD Jundiai 
+CDD Votorantim 
+CDD Litoral 
+CDD Suzano 
+CDD Guarulhos 
+CDD Maua 
+CDD Barueri 
+CDD Jaguariuna 
+CDI Guarulhos INT 

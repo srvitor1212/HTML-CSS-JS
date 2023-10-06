@@ -1,0 +1,17 @@
+CDD Uberaba 
+CDD Alfenas 
+CDD Joao Monlevade 
+CDD Sete Lagoas 
+CDD Pocos de Caldas 
+CDD Pouso Alegre 
+CDD Cachoeiro de Itapemirin
+CDD Ipatinga 
+CDD Contagem 
+CDD Vitoria(Viana) 
+CDD Uberlandia 
+CDL Santa Luzia 
+CDL AS Minas 
+CDL Expressa 
+CDD Varginha 
+CDD Wals 
+CDD Nova Minas 

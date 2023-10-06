@@ -1,0 +1,18 @@
+CDD Agudos (Vidros) 
+CDD Aracatuba 
+CDD Araraquara 
+CDD S.J. Pinhais 
+CDD Ribeirao Preto 
+CDD Jau 
+CDD Ponta Grossa 
+CDD Curitiba 
+CDD Presid. Prudente
+CDS Beltrao 
+CDD Mogi Mirim 
+CDD Bebedouro 
+CDD Londrina 
+CDL Paranagua 
+CDD Guarapuava 
+CDD Foz do Iguacu 
+CDD Cascavel 
+CDI Ponta Grossa INT

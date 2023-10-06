@@ -1,0 +1,19 @@
+CDD Cuiaba 
+CDC Itumbiara 
+CDD Campo Grande 
+CDC Formosa 
+CDC Porto Velho 
+CDC Tangara da Serra
+CDC Colider 
+CDC Rio Verde 
+CDC Rio Branco 
+CDC Caceres 
+CDC Araguaina 
+CDC Rondonopolis 
+CDC Catalao 
+CDD Goiania 
+CDD Manaus 
+CDC Boa Vista 
+CDD Brasilia BR 
+CDD Brasilia XB 
+CDD Cebrasa 

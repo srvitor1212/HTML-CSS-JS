@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>        
+        
+        <h1>Funções JS</h1>
+        <h3>Utiliza o F12 > Console, para rodar as funções criadas</h3>
+        
+        
+        <script>
+            
+            function minhaFuncao(){
+                alert("Executou minhaFuncao");
+                alert("Chamou funcParametros: " + funcParametros(10, 20));
+            }            
+            function funcParametros(n1, n2){
+                var res = n1 + n2;
+                return res;
+            }
+            
+            /*======================================================*/
+            
+            function somar(n1, n2){
+                return n1 + n2;
+            }            
+            somar.teste = "Texto na função";
+            
+            /*======================================================*/
+            
+            var teste = function(str){
+                console.log("Function anônima, passou valor:" + str);
+            };
+            
+            /*======================================================*/
+        
+            var var01 = function(f){
+                f();
+            };
+            
+            var01( function(){
+                console.log("Chama função var01, passando uma função. Doidera"); 
+            })
+            
+        </script>
+        
+    </body>
+    
+</html>

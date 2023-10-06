@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <style>
+            body{
+                font-family: sans-serif;                
+            }
+            table{
+                border-collapse: collapse; /*tira os espaços entre as células*/
+                width: 40%;
+                margin: auto;
+                background: beige;
+            }
+            th{
+                background: #4da8b4; /*CTRL + E abre palete de cores*/
+                border: 2px solid;
+                padding: 12px;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 8px;
+            }
+        </style>
+    </head>    
+    <body>
+        
+        <table>            
+            <caption>Tabela de preços</caption>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="3">*Valores sujeiros a alteração</td>
+                </tr>
+            </tfoot>
+        
+            <tbody>                
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>PhotoShop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>                
+                <tr>
+                    <td rowspan="3">Developer</td>
+                    <td>Cobol</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>                
+            </tbody>
+            
+        </table>
+        
+    </body>
+</html>

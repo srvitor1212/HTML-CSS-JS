@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+
+    </head>
+    
+    <body>    
+        
+        <h1>Array</h1>
+        <hr>
+        <div class="res">&nbsp;</div>
+        <hr>
+        <input type="button" onclick="CriarLista()" value="Criar">
+        <input type="button" onclick="Inserir()" value="Inserir">
+        
+        <script>            
+            var pessoas = new Array();
+            var res = document.querySelector(".res");
+            
+            function CriarLista(){                
+                pessoas[0] = "Maria Silva";
+                pessoas[1] = "Vicente Vicente";
+                pessoas[2] = "José Gaudino";
+                pessoas[3] = "Fernando Debacker";
+                res.innerHTML = "Conteúdo array: [" + pessoas + "]";
+            }            
+            
+            function Inserir(){
+                pessoas.push(prompt("Insira um novo nome para lista"));
+                res.innerHTML = "Conteúdo array: [" + pessoas + "]";                
+            }
+            
+            
+        </script>
+        
+    </body>
+    
+</html>

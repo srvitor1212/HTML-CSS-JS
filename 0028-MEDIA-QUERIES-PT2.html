@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <!-- F12 no chrome, clicar no ícone de celular "toggle device toolbar" para mostra como ficaria no celular -->
+        <meta name="viewport" content="width=device-width"> <!-- viewport = tela. content = tamanho da largura é igual a largura do device -->
+        
+        <style>
+            body{
+                background: yellow;
+            }
+            .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+            .container{
+                background: white;
+                padding: 15px;
+            }
+            .clearfix:after{
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            .container div{
+                background: #ccc;
+                margin-bottom: 15px;
+                height: 150px;
+            }
+            
+            @media screen and (min-width: 600px){ /*se for tela e tiver mais de 600px*/
+                body{
+                    background: orange;
+                }
+                .container div{
+                    width: 48%;
+                    float: left;
+                    margin: 1%;
+                }
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Exemplo de media queries</h1>
+        
+        <p>Paragráfo qualquer</p>
+
+        
+        <div class="container clearfix">
+            <div>div 1</div>
+            <div>div 2</div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,12 @@
+CDD Sapucaia 
+CDD Blumenau 
+CDD Camboriu 
+CDD Pelotas 
+CDD Florianopolis(sao jose) 
+CDD Porto Alegre 
+CDD Sta Cruz do Sul
+CDD Santa Maria 
+CDD Gravatai 
+CDD Caxias 
+CDI Santa Catarina 
+CDD Itajai 

@@ -1,0 +1,29 @@
+==================================================================================================
+=                                     Manutenção StatusCOBOL                                     =
+==================================================================================================
+=                                                                                                =
+= Necessário instalar o programa HelpNDoc Free, e abrir pelo programa o arquivo StatusCobol.hnd. =
+= Após alterar compilar o projeto gerando novos arquivos, e somente substituir pasta files.      =
+=                                                                                                =
+=                                                                                                =
+= Na pasta files, se encontra o arquivo toc.htm, e este será editado da seguinte maneira:        =
+=                                                                                                =
+= Abaixo da primeira TAG <LINK> incluir:							 =
+=												 =
+=     <link rel="stylesheet" href="../padrao/classes.css"type="text/css" />			 =
+=												 =
+==================================================================================================
+=												 =
+= Inserir na TAG body do arquivo toc.htm:							 =
+=												 =
+=     class="body"										 =
+=												 =
+==================================================================================================
+=												 =
+= Substituir a linha:     									 =
+=     d.add(0,-1,'Status COBOL','javascript:void(0);');						 =
+=											 	 =
+= Por:												 =
+=     d.add(0,-1,'Lista Status','../padrao/inicial.htm');					 =
+=												 =
+==================================================================================================

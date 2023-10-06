@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>  
+        
+        <script>
+            
+            alert("teste001");
+            
+            // IIFE são: Funções que se auto-invocam. Mas para que iríamos querer uma função anônima tão egocêntrica assim? A resposta é para não poluirmos o escopo global desnecessariamente.
+            (function(){
+                alert("teste");
+            })();
+            
+            (function(){   })();
+        
+        
+        </script>
+        
+    </body>
+    
+</html>

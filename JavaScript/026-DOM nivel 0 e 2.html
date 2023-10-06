@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>        
+        
+        <button id="bt1" onclick="clicar()">botao 1</button>
+        <button id="bt2">botao 2</button>
+        
+        <script>
+            //dom nv 0
+            function clicar(){
+                alert("clicou nv0");
+            };
+            
+            //dom nv 2
+            var bt2 = document.getElementById("bt2");
+            bt2.addEventListener(
+                "click", 
+                function(){
+                    alert("DOM NÍVEL 2");
+                } 
+            );
+            
+            bt2.addEventListener(
+                "click", 
+                function(){
+                    alert("DOM NÍVEL 2 - outro evento");
+                } 
+            );
+            
+        </script>
+        
+    </body>
+    
+</html>

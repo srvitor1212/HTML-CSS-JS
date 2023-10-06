@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>        
+        
+        <h1>Inner HTML</h1>
+        
+        <div id="output"></div>
+        <div class="output"></div>
+        <h2>Será substituida pelo JS</h2>
+        <h2>Somente a primeira tag, essa fica intacta</h2>
+        
+        <script>
+            
+            var output = document.querySelector('#output');
+            var Xoutput = document.querySelector('.output');
+            var h2 = document.querySelector('h2');
+            
+            output.innerHTML = "Texte inserido com INNER HTML";
+            Xoutput.innerHTML = "Valor pela classe";
+            h2.innerHTML = "Alterao pelo JS";
+
+            /*console.log(output); Mostr no f12 do chrome*/
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body> 
+        
+        <h1>Exercício</h1>
+        <h2>F12 > Console</h2>
+        
+        <script>
+            
+            var pessoa01 = {
+                nome: "Vitor",
+                sobrenome: "Vicente"
+            }
+            var pessoa02 = {
+                nome: "Alexandre",
+                sobrenome: "Jovenal"
+            }
+            var pessoa03 = {
+                nome: "Maria",
+                sobrenome: "Pereira"
+            }
+            
+            
+            console.log(pessoa01.nome + " " + pessoa01.sobrenome);
+            console.log(pessoa02.nome + " " + pessoa02.sobrenome);
+            console.log(pessoa03.nome + " " + pessoa03.sobrenome);
+            console.log("Outra forma .............");
+            
+            for (var i=1; i<=3; i++){
+                console.log(window["pessoa0"+i].nome + " " + window["pessoa0"+i].sobrenome);
+            };
+            
+            console.log("Outra forma .......................");
+            var pessoas = [ //[] array
+                pessoa01,
+                pessoa02,
+                pessoa03,
+            ];
+            
+            var x=0;
+            while (pessoas[x]){
+                console.log(pessoas[x].nome);
+                x++;
+            }
+        
+        </script>
+        
+    </body>
+    
+</html>

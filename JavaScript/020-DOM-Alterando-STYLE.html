@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+        
+        <style>
+            h3{
+                color: red;
+            }
+        </style>
+        
+    </head>
+    
+    <body>  
+        
+        <h1>DOM = Document Object Model</h1>
+        <h3>Cada tag do html vira um objeto para o JS</h3>
+        
+        <script>
+            document.getElementsByTagName("style")[0].textContent = "h1 {color: blue;}";
+            alert("Inserido CSS através do JS. Sobrescreve oque já havia do STYLE");            
+        </script>
+        
+    </body>
+    
+</html>

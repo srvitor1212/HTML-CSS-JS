@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tabuada</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>        
+        
+        <h1>Tabuada JS</h1>
+        
+        <label>Tabuada: <input type="text" id="txtValor" size="1" maxlength="3" > </label> <input type="button" value="Gerar" onclick="Gerar()">
+        <hr>
+        
+        <div id="divResult"></div>
+        
+        <hr>
+        <h2>Obrigado por utilizar o programa!</h2>
+        
+        <script>
+            
+            function Gerar(){
+                var tabuada = parseInt(document.all.txtValor.value);
+                var divResult = document.querySelector('#divResult');
+                var resultTabuada = "";
+                
+                if (isNaN(tabuada) == true){ /*NaN = Not A Number*/
+                        alert("Informe somente números");
+                    } else {
+                        for (var ind=1; ind<=10; ind++){                    
+                            resultTabuada += tabuada + "x" + ind + " = " + (tabuada*ind) + "<br>";
+                        }                
+                        divResult.innerHTML = resultTabuada;
+                    }
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>

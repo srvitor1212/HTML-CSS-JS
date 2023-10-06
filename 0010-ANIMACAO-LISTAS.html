@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+
+        <style>
+            li ul{
+                height: 0;
+                overflow: hidden; /* esconder o conteúdo excedente */
+                transition: height .5s;
+            }
+            li:hover{
+                background: gray;
+            }
+            li:hover ul{
+                height: 50px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- lista normal --> 
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+            <li>item 3</li>
+        </ul>
+        
+        <hr>        
+    </body>
+</html>

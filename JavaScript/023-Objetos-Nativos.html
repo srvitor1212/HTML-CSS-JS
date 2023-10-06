@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>
+        <h1>Obejtos nativos do JS</h1>
+        <h3>Utilizar f12 > console</h3>
+        
+
+        <script>
+            
+            var minhaSTR = "Vitor";            
+            console.log(minhaSTR.length);
+            
+            
+            var varStr = new String("Minha string de teste");
+            console.log(varStr.valueOf());
+            
+            
+            var varNum = new Number(10);
+            console.log(varNum.valueOf());
+            
+            
+            var varBool = new Boolean(true);
+            console.log(varBool.valueOf());
+            
+            
+            var varArr = new Array(1,2,3);
+            console.log(varArr.valueOf());
+            
+            
+            var varObj = new Object();
+            varObj.title = "Título";
+            console.log(varObj.title);
+            
+            varObj = {"title": "Meu título", "texto": "Meu texto", "valor": 2.55, "QualquerCoisa": "Seila xd virou um JSON"};
+            console.log(varObj.title);
+            console.log(varObj.texto);
+            console.log(varObj.valor);
+            console.log(varObj.QualquerCoisa);
+            
+            
+            console.log("---------------------------------------------");
+        </script>
+        
+    </body>
+    
+</html>

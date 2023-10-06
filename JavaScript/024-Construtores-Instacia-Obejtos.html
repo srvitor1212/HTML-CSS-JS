@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body> 
+        
+        <h1>F12 > Console</h1>
+        
+        <script>
+            
+            // ESCOBO GLOBAL, PODE DAR PROBLEMA
+            // Se fizer var teste = Caneta () sem o new, tonar as variáveis globais podendo causar erros
+            function Caneta(preco, cor){ // quando for função que cria instâncias de objetos usar primeira letra maiuscula
+                
+                //this = permite usar Caneta.preco. torna público
+                this.preco = preco || 1; //Recebe por parâmetro ou por padrão é 1
+                
+                //usando var se torna privado, não permit usar Caneta.Color
+                var color = cor || "black"; 
+                
+                this.setCor = function(cor){
+                    color = cor;
+                }
+                this.getCor = function(cor){
+                    return color;
+                }
+            }
+            
+            caneta01 = new Caneta();
+            console.log(caneta01);
+            console.log("Preço caneta: " + caneta01.preco);            
+            
+            caneta01.preco = 5;
+            console.log("Preço caneta: " + caneta01.preco);
+            console.log(caneta01);            
+            
+            caneta02 = new Caneta("99", "red");
+            console.log(caneta02);
+            
+            //caneta01.getCor();
+            //caneta01.setCor("red");
+            
+            
+            //ESCOCO LOCAL, PROTEGE DE ERROS COMO var teste = Caneta () sem o new
+            (function(window){
+                "use strict";
+                window.Lapis = function(preco, cor){ // quando for função que cria instâncias de objetos usar primeira letra maiuscula
+
+                    //this = permite usar Caneta.preco. torna público
+                    this.preco = preco || 1; //Recebe por parâmetro ou por padrão é 1
+
+                    //usando var se torna privado, não permit usar Caneta.Color
+                    var color = cor || "black"; 
+
+                    this.setCor = function(cor){
+                        color = cor;
+                    }
+                    this.getCor = function(cor){
+                        return color;
+                    }
+                }
+                
+                //NO F12= var lapis = new Lapis(2,"preto");
+                console.log(lapis);
+            })(window)
+            
+        
+        </script>
+        
+    </body>
+    
+</html>

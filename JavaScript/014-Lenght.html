@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+
+    </head>
+    
+    <body>
+        
+        <h1>Length</h1>
+        <hr>
+        
+        <div id="x"></div>
+        
+        <script>
+            var arr = new Array(21,3,4,3,2,5,6,6,4,3,6,8,9,32);
+            var x = document.querySelector("#x");
+
+            for (var i=0; i < arr.length; i++){
+                x.innerHTML += arr[i] + "<br>";
+            }
+        </script>
+        
+    </body>
+    
+</html>

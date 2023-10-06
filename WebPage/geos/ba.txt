@@ -1,0 +1,20 @@
+CDD Salvador 
+CDD Lapa 
+CDD Guanambi 
+CDD Barreiras 
+CDD Ilheus 
+CDD Vitoria da Conquista
+CDC Eunapolis 
+CDD Feira de Santana 
+CDD Maceio 
+CDD Salgueiro 
+CDD Ribeira do Pombal 
+CDL Cabo 
+CDD Brumado 
+CDD Olinda 
+CDC Arapiraca 
+CDD Caruaru 
+CDD Aracaju 
+CDL Jequie 
+CDL AS Camacari 
+CDD Pernambuco 

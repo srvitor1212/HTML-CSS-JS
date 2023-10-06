@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>
+        
+        <h1>$txt</h1>
+        
+        <input type="text" id="txtNome" value="Insira o nome">
+        
+        <script>
+            //$ = boa prática para indicar que é um elemento do DOM
+            var $txt = document.querySelector("#txtNome");
+            var nome = "Vitor";
+            var sobrenome = "Vicente";
+            
+            $txt.value = nome + " " + sobrenome;
+            $txt.disabled = true;
+            
+            /*
+atributo no HTML     |  propriedade no Javascript
+
+for                               |  forhtml
+
+class                           |  className
+
+readonly                     |  readOnly
+
+maxlength                  | maxLength
+
+cellspacing                 |  cellSpacing
+
+rowspan                     |  rowSpan
+
+colspan                      |  colSpan
+
+tabindex                     |  tabIndex
+
+cellpadding                |  cellPadding
+
+contenteditable          |  contentEditable
+
+frameborder               |  frameBorder
+
+usemap                      |  useMap
+            */
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                margin: 3px;
+                
+                transition-property: width, height;
+                transition-duration: .5s, .5s;
+                transition-delay: .2s, .6s;
+             
+            }
+            div:hover{
+                width: 200px;
+                height: 200px;
+            }
+            #d1{
+                transition-timing-function: linear;
+                /*mesmo velocidade*/
+            }
+            #d2{
+                transition-timing-function: ease;
+                /*desacelera no final*/
+            }
+            #d3{
+                transition-timing-function: ease-in;
+                /*começa devagar*/
+            }
+            #d4{
+                transition-timing-function: ease-out;
+                /*desacelera gradativamente*/
+            }
+            #d5{
+                transition-timing-function: ease-in-out;
+            }
+            #d6{
+                /*
+                https://cubic-bezier.com/
+                */
+                transition-timing-function: cubic-bezier(.14,-0.63,.73,1.66);
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        
+        <h1>Transition</h1>
+        <div id="d1">linear</div>
+        <div id="d2">ease</div>
+        <div id="d3">ease-in</div>
+        <div id="d4">ease-out</div>
+        <div id="d5">ease-in-out</div>
+        <div id="d6">cubic bezier</div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>x</p>
+        
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>
+    
+    <form name="myForm" method="get">
+        
+        <fieldset id="field01">
+        <h1>DATAs (onBlur)</h1>
+        
+        <h3>
+            <p>
+                <label>Formato dd/mm/aaaa</label>
+                <input type="text" size=10 maxlength="10" id="txData01" name="txData01" tabIndex=1
+                       onblur="FormataData(this, '99/99/9999')">
+            </p>
+
+            <p>
+                <label>Formato dd/mm/aa</label>
+                <input type="text" size=8 maxlength="8" id="txData02" name="txData02" tabIndex=2
+                       onblur="FormataData(this, '99/99/99')">
+            </p>
+        </h3>
+        
+        
+        </fieldset>
+        
+        <fieldset id="field02">
+        <h1>DATAs (onKeyDown)</h1>
+        
+        <h3>
+            <p>
+                <label>Formato 99/99/9999</label>
+                <input type="text" size=10 maxlength="10" id="txData03" name="txData03" tabIndex=10
+                       onKeyDown="return SomenteNumeros()"
+                       onblur="FormataData(this, '99/99/9999')">
+            </p>
+
+            <p>
+                <label>Formato 99/99/99</label>
+                <input type="text" size=8 maxlength="8" id="txData04" name="txData04" tabIndex=11
+                       onKeyDown="return SomenteNumeros(this)"
+                       onblur="FormataData(this, '99/99/99')">
+            </p>            
+        </h3>
+            
+        </fieldset>
+        
+        <p>
+            <input type="button" tabindex=999 value="Submit"
+                  onClick="teste(myForm)" >
+        </p>
+        <script>
+            //**********************************************************
+            function FormataData(obj, mascara) {         
+                var valor = obj;                
+                switch(mascara) {
+                    case "99/99/9999":
+                        FuncDDMMAAAA(valor);
+                        break;
+                    
+                    case "99/99/99":
+                        FuncDDMMAA(valor);
+                        break;
+                        
+                    default:
+                        alert("Utilize '99/99/9999'")
+                        break;
+                }
+            }
+            //**********************************************************
+            function FuncDDMMAAAA(valor){
+                Formater(valor, 8);
+            }
+            
+            function FuncDDMMAA(valor){
+                Formater(valor, 6);
+            }   
+            
+            function Formater(valor, limite){
+                var DataNumeros = new Object();
+                DataNumeros.value = RetNumeros(valor);
+                var strValor = "";   
+                
+                for (i = 0; i < DataNumeros.value.length; i++){
+                    var letra = DataNumeros.value[i];
+                    if (i >= limite){
+                       break;
+                    }
+                    if (i == 2){
+                        strValor = strValor + "/";
+                    }
+                    if (i == 4){
+                        strValor = strValor + "/";
+                    }
+                    strValor = strValor + letra; 
+                }
+                valor.value = strValor;                
+            }
+            //********** Genérico **********
+            function RetNumeros(valor){
+                var numData = "";
+                for (i=0; i < valor.value.length; i++){
+                    var letra = valor.value[i];
+                    if (isNaN(letra) == true || letra == " "){ //não númerico
+                        continue;
+                    } else {
+                        numData = numData + letra;
+                    }
+                }                
+                return numData;
+            }
+            
+            function SomenteNumeros(){
+                if (event.shiftKey == true){
+                    return false;                    
+                } else {
+                    if(
+                        (event.keyCode >= 48 && event.keyCode <= 57) //numeros acima das letras
+                        || (event.keyCode >= 96 && event.keyCode <= 105) //teclado numérico 
+                        || (event.keyCode == 9) //9 = tab
+                        || (event.keyCode == 193) //193 = barra
+                        ){                    
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }   
+        </script>
+        
+        
+    </form>
+    </body>
+    
+</html>

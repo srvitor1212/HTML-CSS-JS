@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+
+    </head>
+    
+    <body>        
+        <h1>getDay()</h1>
+        <hr>
+        <h3>Date()</h3>
+        <div class="date"></div>
+        <hr>        
+        
+        <h3>Day()</h3>
+        <div class="day"></div>
+        <hr>
+        
+        <script>
+            divDate = document.querySelector(".date");
+            divDay = document.querySelector(".day");
+            
+            var data = new Date();            
+            divDate.innerHTML = data;
+            
+            var dia = data.getDay();
+            switch (dia){
+                case 0:
+                    divDay.innerHTML = "Segunda-feira";
+                    break;
+                case 1:
+                    divDay.innerHTML = "Terça-feira";
+                    break;
+                case 2:
+                    divDay.innerHTML = "Quarta-feira";
+                    break;
+                case 3:
+                    divDay.innerHTML = "Quinta-feira";
+                    break;
+                case 4:
+                    divDay.innerHTML = "Sexta-feira";
+                    break;
+                case 5:
+                    divDay.innerHTML = "Sábado";
+                    break;
+                case 6:
+                    divDay.innerHTML = "Domingo";
+                    break;
+                    
+                default:
+                    divDay.innerHTML = "ERRO";
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>

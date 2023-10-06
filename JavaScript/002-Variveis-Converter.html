@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>
+        
+        <h1>Lógica de programação JS</h1>
+        
+        <script>
+            var nome = prompt("Digite o seu nome:");
+            alert("Olá " + nome + "!!!");
+            
+            //Sempre vem como string, precisa converter para INT
+            var n1 = prompt("NUM1:  ");
+            alert("Tipo da variável n1 é: " + typeof(n1));
+            n1 = parseInt(n1);
+            alert("Tipo da variável n1 é: " + typeof(n1));
+            
+            //Converter já na hora de receber
+            var n2 = parseInt(prompt("NUM2:  "));
+            
+            res = n1 + n2;
+            alert("Resultado: " + res);
+            
+        </script>
+        
+    </body>
+    
+</html>

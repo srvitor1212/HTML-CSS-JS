@@ -1,0 +1,30 @@
+.body
+{
+    BORDER-COLLAPSE: "collapse";
+    MARGIN: 2px 2px 2px 2px;
+    OVERFLOW: 'auto';
+    SCROLLBAR-TRACK-COLOR: '#CBE7E8';
+    SCROLLBAR-SHADOW-COLOR: '#CBE7E8';
+    SCROLLBAR-HIGHLIGHT-COLOR: '#CBE7E8';
+    SCROLLBAR-FACE-COLOR: '#00878A';
+    SCROLLBAR-BASE-COLOR: '#00878A';
+    SCROLLBAR-ARROW-COLOR: '#CBE7E8';
+}
+.cabecalho
+{ 
+    FONT-FAMILY: 'Verdana';
+    FONT-SIZE: 8pt;
+    COLOR: 'red';
+    FONT-WEIGHT: 'bold';
+}
+.iframe
+{
+    MARGIN: 0px 0px 0px 0px;   
+    BORDER: none;
+    WIDTH: 100%;
+    HEIGHT: 100%;
+}
+TABLE
+{
+    MARGIN: 0px 0px 0px 0px;  
+}

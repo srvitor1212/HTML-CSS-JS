@@ -1,0 +1,73 @@
+<!-- 
+================================================================================================================================================================
+
+HEAD DO DOCUMENTO
+
+================================================================================================================================================================
+-->
+<meta name="author" content="Vitor Vicente">
+<meta name="description" content="Projetar e Evoluir na busca por qualidade para equipamentos de ar condicionado. Somos pioneiros em oferecer o Kit em Aço Inox para estes equipamentos.">
+<meta name="keywords" content="brisch, brish, brich, brick, brix, brixx, ar condicionado em inox, ar condicionado, ar condicionado de qualidade, ar inox, ar em inox, kit inox, kit ar inox, kit ar condicionado inox, kit ar-condicionado, kit ar-condicionado de inox, kit aço inox, ar de aço, ar de aço inox, ar condicionado aço inox">
+
+<style>
+.whatsapp-flutuante-direita {
+    position: fixed;
+    right: 50px;
+    align-items: center;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.whatsapp-flutuante-direita, .whatsapp-flutuante-esquerda {
+    bottom: 75px;
+    height: 45px;
+    width: 8px;
+    display: flex;
+    border-radius: 50%;
+    opacity: 1;
+} 
+.img-whats-app {
+    width: 45px;
+}
+</style>
+
+
+<!-- 
+================================================================================================================================================================
+
+DENTRO DO BODY
+
+================================================================================================================================================================
+-->
+<!-- ícone WhatsApp-->
+<a href="https://wa.me/554791452335?text=Ol%C3%A1%2C%20acessei%20seu%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20seus%20produtos%21" id="aWhatsAppFlutuante" target="_blank" data-fone="554791452335" class="whatsapp-flutuante-direita">
+    <img src="zap.png" alt="" class="img-whats-app">
+</a>
+
+<!-- Outros -->
+<script>
+
+    function ResizeImagensHome(){
+        try {
+            DOM = document.getElementsByClassName('kv-ee-carousel-image');
+            lenElementos = DOM.length;
+            de = String('&methods=resize%2C600%2C5000');
+            para = String('&methods=resize%2C1800%2C1800');
+
+            //percorre os elementos encontrados
+            for(var ind1=0; ind1 < lenElementos; ind1++){
+                strElemento = DOM[ind1].style.backgroundImage;
+                edit = strElemento.replace(de, para);
+                DOM[ind1].style.backgroundImage = String(edit);
+            };
+        }
+        catch (e) {
+            console.log('!!! OCORREU ERRO AO RENDERIZAR IMAGEM !!!');
+        };
+    };
+    
+    (function(){
+        ResizeImagensHome();
+    })();
+
+</script>

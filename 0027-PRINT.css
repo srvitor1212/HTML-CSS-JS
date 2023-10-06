@@ -1,0 +1,9 @@
+body{
+    font-family: serif;
+    color: black;
+    font-size: 16px;    
+}
+a:after{
+    content: "(" attr(href) ")"; /*Inclui o link que está no href*/
+    display: inline-block;
+}

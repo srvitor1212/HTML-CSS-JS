@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        <style>
+            div{
+                background: orange;
+                width: 150px;
+                height: 100px;
+                margin: 10px;
+            }
+            #div1{
+                padding: 25px; /*O padding se some ao tamanho da div, nesse caso 
+                width = 100 + 25 + 25
+                heigth= 100 + 25 + 25 */
+            }
+            #div2{
+                padding: 25px;                
+                box-sizing: border-box; /* Com isso, não soma o paddint ao tamanho da div */
+            }        
+        </style>
+    </head>
+    
+    <body>
+        <h1>Texto h1</h1>
+        <div id="div1">teste</div>
+        <div id="div2">teste</div>
+    </body>
+</html>

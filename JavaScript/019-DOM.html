@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>  
+        
+        <h1>DOM = Document Object Model</h1>
+        <h3>Cada tag do html vira um objeto para o JS</h3>
+        
+        <header>Header</header>
+        
+        <main class="cmain" id="idmain">
+            <h2>subtitulo</h2>
+            <p id="pmain">O que temos que ter sempre em mente é que a contínua expansão de nossa atividade apresenta tendências no sentido de aprovar a manutenção do retorno esperado a longo prazo.</p>
+        </main>
+        
+        <section class="csection" id="section">
+            <h3>subtitulo</h3>
+            
+            <p class="paragrafo">O cuidado em identificar pontos críticos na expansão dos mercados mundiais aponta para a melhoria das posturas dos órgãos dirigentes com relação às suas atribuições.</p>
+            <p class="paragrafo">Desta maneira, o desenvolvimento contínuo de distintas formas de atuação maximiza as possibilidades por conta dos procedimentos normalmente adotados.</p>
+            
+        </section>
+        
+        <footer>Footer</footer>  
+        
+        <script>
+            /*
+            DOM = Document Object Model
+            F12 > console: escrever documento (que é o DOM) ele vai trazer a estrutuda do documento
+            
+            >>>> Comandos:
+            >> getElementById = retorna exatamente o elemento, permitinado alte-lo, exemplo:
+                document.getElementById("idmain");
+                document.getElementById("pmain").textContent = " texto Alterado";            
+            
+            >> getElementsByClassName = Retorna uma colação de elementos. Necessário passar o índice do elemento. (coleção = NodeList)
+                document.getElementsByClassName("paragrafo")[0].textContent = "Texto alterado";
+                
+            >> getElementsByTagName = retorna uma coleção (coleção = NodeList)
+                document.getElementsByTagName("h1");
+                
+            >> querySelector = Mesmo seletores utilizados no CSS. Retorna sempre o primeiro elemento
+                document.querySelector("#idmain");
+                document.querySelector("#idmain p");
+                document.querySelector("#idmain h2"). textContent = "Alterado!!!!!!!!!11";
+            
+            >> document.querySelectorAll = Retorna uma coleção de elementos
+                document.querySelectorAll(".csection p")[1].textContent = "XXXXXXXXXXXX";
+                
+            */
+            
+        </script>
+        
+    </body>
+    
+</html>

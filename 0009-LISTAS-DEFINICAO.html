@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+
+        <style>
+            li ul{
+                display: none;
+            }
+            li:hover{
+                background: gray;
+            }
+            li:hover ul{
+                display: block;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- lista normal --> 
+        <ul>
+            <li>item 1</li>
+            <li>item 2
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            </li>
+            <li>item 3</li>
+        </ul>
+        
+        <hr>
+        
+        <!-- lista de definição --> 
+        <dl> <!-- definition list --> 
+            <dt>HTML</dt> <!-- difinition term --> 
+            <dd>Linguagem de marcação de text</dd> <!-- definition description --> 
+            
+            <dt>CSS</dt>
+            <dd>Criação de folhas de estilo</dd>
+        </dl>
+        
+        <hr>
+        
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>rede mundial de computadores</dd>
+        </dl>
+        
+        <hr>
+        
+        <dl>
+            <dt>JavaScirpt</dt>
+            <dd>Script de manipulação de html</dd>
+            <dd>usado na internet</dd>
+        </dl>
+        
+    </body>
+</html>

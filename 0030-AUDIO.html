@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+    </head>    
+    <body>
+        
+    <h1>Áudio</h1>
+    <audio controls src="media//mozart_trompa.mp3" >Audio</audio>
+    
+    <h1>Áudio com vários formatos</h1>
+    <audio controls autoplay> <!-- Alguns navegadores bloqueiam o autoplay -->
+        <source src="media/mozart_trompa.mp3" type="audio/mp3">
+        <source src="media/mozart_trompa.ogg" type="audio/ogg">
+        <p>Erro ao tentar carregar o áudio</p>
+    </audio>
+        
+    </body>
+</html>

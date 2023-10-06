@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="html5, tecnologia, tech">
+        
+        <style>
+            
+            .grupo-cores{
+                padding: 15px;
+                counter-reset: contador;
+            }
+            
+            .grupo-cores div{
+                width: 90%;
+                padding: 15px;
+                border: 10px solid rgba(0,0,0,.5);
+                
+                counter-increment: contador;
+            }
+            
+            .grupo-cores div:before{
+                content: "[" counter(contador) "]";
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <h1>Cores</h1>
+        
+        <div class="grupo-cores">
+            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>            
+            <div class="cores"><p>Podemos já vislumbrar o modo pelo qual o aumento do diálogo entre os diferentes setores produtivos faz parte de um processo de gerenciamento das direções preferenciais no sentido do progresso.</p></div>            
+        
+        </div>
+        
+    </body>
+</html>

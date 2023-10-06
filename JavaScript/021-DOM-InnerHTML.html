@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Vitor"> 
+        <meta name="description" content="Descrição da página">
+        <meta name="keywords" content="">
+    </head>
+    
+    <body>  
+        
+        <h1>JAVA SCRIPT</h1>        
+        <div id="msg"></div>
+        
+        <hr>
+        
+        <label>
+            On key Up:
+            <input type="text" id="txtNome" onkeyup="texto()">
+            <div id="msg002">&nbsp;</div>
+        </label>
+        
+        <hr>
+        <label>
+            On key Down:
+            <input type="text" id="txtNome003" onkeydown="texto003()">
+            <div id="msg003"></div>
+        </label>        
+        
+        
+        <script>
+        
+            (function(){
+                //var nome = prompt("Qual seu nome ?");
+                //document.querySelector("#msg").innerHTML = "Bem vindo, <b>" + nome + "</b>!";
+            })()      
+            
+                        
+            function texto(){
+                var div = document.querySelector("#msg002");
+                var nome = txtNome.value;
+                div.innerHTML = nome;
+            }            
+            
+            
+            function texto003(){
+                var div = document.querySelector("#msg003");
+                var nome = txtNome003.value;
+                div.innerHTML = nome;
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
